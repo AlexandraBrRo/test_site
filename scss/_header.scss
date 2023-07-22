@@ -3,9 +3,23 @@
    align-items: center;
    background-color: var(--bg-color);
 }
-
+.header-sticky{
+   position: relative;
+   z-index: 1000;
+   transition: padding-top 0.3s ease;
+   &.fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 10px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 10px 0;
+    }
+}
 .header-first{
-   padding: 25px 0; 
+   padding: 25px 0;   
 }
 h1{
    font-weight: 400;

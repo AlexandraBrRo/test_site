@@ -37,4 +37,39 @@ $(document).ready(function(){
       
    });
 
+   // let startPost = $('.sticky').offset().top;
+
+   // $(window).scroll(function() {
+   //   if ($(window).scrollTop() >= startPost) {
+   //     if (!$('.sticky').hasClass('fixed')) {
+   //       $('.sticky').addClass('fixed');
+   //     }
+   //   } else {
+   //     $('.sticky').removeClass('fixed');
+   //   }
+   // });
+   
+   // let originalPaddingTop = $('body').css('padding-top');
+   // let startPost = $('.sticky').offset().top;
+   // let isSticky = false;
+ 
+   $(window).scroll(function() {
+     if ($(window).scrollTop() >= startPost) {
+       if (!isSticky) {
+         $('.sticky').addClass('fixed');
+         $('body').css('padding-top', '200px');
+         isSticky = true;
+       }
+     } else {
+       if (isSticky) {
+         $('.sticky').removeClass('fixed');
+         $('body').css('padding-top', originalPaddingTop);
+         isSticky = false;
+       }
+     }
+   });
+
+
 });
+
+ 
