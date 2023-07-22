@@ -14,32 +14,111 @@
    <div class="wrapper">
       <header class="header-first">
          <section class="heder-block d-flex">
-            <div><img src="img/pets.png" height="50px" alt=""></div>
+            <div><img class="logo" src="img/pets.png" alt="dog and cat"></div>
             <h1>Тварини, що шукають дім</h1>
             <div class="social-part d-flex">
                <a href="https://www.facebook.com/Alfa.Chernivtsi" target="_blank">
-                  <img src="img/svg/facebook.svg" height="30px" alt="">
+                  <img class="icons" src="img/svg/facebook.svg" alt="facebook">
                </a>
                <a href="https://www.instagram.com/alfachernivtsi/?igshid=hf39o6x0zixf" target="_blank">
-                  <img src="img/svg/instagram.svg" height="30px" alt="">
+                  <img class="icons" src="img/svg/instagram.svg" alt="instagram">
                </a>
                <a href="https://www.tiktok.com/@moi4lapu" target="_blank">
-                  <img src="img/svg/tiktok.svg" height="30px" alt="">
+                  <img class="icons" src="img/svg/tiktok.svg" alt="tiktok">
                </a>
-               <a href="https://www.facebook.com/search/top?q=%D0%BD%D0%B5%D0%B1%D0%B0%D0%B9%D0%B4%D1%83%D0%B6%D1%96%20%D1%87%D0%B5" target="_blank">
-                  <img src="img/svg/paw-solid.svg" height="30px" alt="">
+               <a href="https://www.facebook.com/nbdz.ua" target="_blank">
+                  <img class="icons" src="img/svg/paw-solid.svg" alt="небайдужі">
                </a>
             </div>
          </section>
       </header>
       <main>
+         <nav class="nav-holder">
+            <ul  class="d-flex nav-part">
+               <li>
+                  <a href="index.html"><span>Home</span></a>
+               </li>
+               <li>
+                  <a href="abortions.html" target="_blank"><span>Adoptions</span></a>
+               </li>
+               <li>
+                  <a href="volunteer.html" target="_blank"><span>​Volunteer</span></a>
+               </li>
+               <li>
+                  <a href="donate.html" target="_blank"><span>Donate</span></a>
+               </li>
+            </ul>
+         </nav>
+         <div class="intro">
+            <figure class="img-prev">
+               <img src="/img/bg_site.png" alt="dog">
+            </figure>
+            <div class="intro-txt">
+               Любитиму вас вірно, до нестями!
+               <br>
+               Стрічати буду гавкотом гучним!
+               <br>
+               Ваш сон охоронятиму ночами, <br> Ви лиш візьміть до себе мене в дім!
+            </div>
+         </div>
+         <div class="slider-part">
+            <div class="slider-title d-flex">
+               <h2>Подивись і обери :)</h2>
+            </div>            
+            <div class="slider">
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog1')">
+                  <img src="img/slides/dog1.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog2')">
+                  <img src="img/slides/dog2.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog3')">
+                  <img src="img/slides/dog3.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog4')">
+                  <img src="img/slides/dog4.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog5')">
+                  <img src="img/slides/dog5.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog6')">
+                  <img src="img/slides/dog6.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog7')">
+                  <img src="img/slides/dog7.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog8')">
+                  <img src="img/slides/dog8.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog9')">
+                  <img src="img/slides/dog9.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog10')">
+                  <img src="img/slides/dog10.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog11')">
+                  <img src="img/slides/dog11.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog12')">
+                  <img src="img/slides/dog12.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog13')">
+                  <img src="img/slides/dog13.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog14')">
+                  <img src="img/slides/dog14.png" alt="dog">
+               </div>            
+               <div class="slider-item clickable-slide" onclick="goToPageWithSection('dog15')">
+                  <img src="img/slides/dog15.png" alt="dog">
+               </div>                        
+            </div>
+         </div>
          
       </main>
    </div>
    
-
-
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+   <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> 
+   <script src="js/slick.min.js"></script>
    <script src="js/script.js"></script>
 </body>
 </html>

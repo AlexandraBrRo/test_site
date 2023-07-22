@@ -1,7 +1,7 @@
 .heder-block{
    justify-content: space-around;
    align-items: center;
-   background-color: rgba(235, 210, 177, 0.518);
+   background-color: var(--bg-color);
 }
 
 .header-first{
@@ -11,8 +11,15 @@ h1{
    font-weight: 400;
    font-size: 50px;
    font-family: 'Lugrasimo', cursive;
-   color: rgb(165, 34, 34);
+   color:var(--red-shade);
+   padding-left: 130px;
 }
 .social-part{
    gap: 25px;
+}
+.logo{
+   width: 50px;
+}
+.icons{
+   width: 30px;
 }

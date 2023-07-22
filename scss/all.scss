@@ -1,9 +1,99 @@
 @import
 '_param',
 '_header',
-'_footer';
+'_footer',
+'_slider';
 
-.main{
-   background-image: url("/img/bg1.png");
-   width: 100%;
+/*Home page*/
+.img-prev{
+   // background-image: url('../img/bg_site.png');
+   background-size: cover;
+   object-fit: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   img{
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+   }
+}
+.intro-txt{
+   position: absolute;
+   top: 590px;
+   left: 108px;
+   z-index: 100;
+   font-size: 30px;
+   line-height: 50px;
+   text-align: left;
+   width: 550px;
+}
+.nav-part{
+   justify-content: center;
+   gap: 50px;
+   padding-bottom: 25px;
+   font-size: 23px;
+   a{
+      color: var(--black);
+      :hover{
+         color: var(--hover-orange);
+      }
+   }
+}
+.slider-title{
+   justify-content: center;
+   padding: 25px 0;
+   font-size: 23px;
+   line-height: 15px;
+   color: var(--red-shade);
+}
+
+/*abortions page*/
+.prev-img{
+   // position: relative;
+   width: 300px;
+   height: 300px;
+   border-radius: 50%;
+   margin: 0 auto;
+   overflow: hidden;
+   img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+   }
+}
+.post-catalog{
+   flex-wrap: wrap;
+   .post-picture{
+      width: 100%;
+      max-width: 33.3333%;
+      flex: 0 0 33.3333%;
+      padding: 10px;
+      img{
+         border-radius: 10px;
+         max-width: 100%;
+         display: block;
+         height: auto;
+         flex-wrap: wrap;
+      }
+   }
+}
+.title{
+   flex-direction: column;
+   .pets-name{
+      font-size: 60px;
+      line-height: 20px;
+      color: var(--red-shade);
+      justify-content: center;
+      padding-top: 30px;
+      padding-bottom: 25px;
+   }
+   .info-pets{
+      max-width: 700px;
+      margin: 0 auto;
+      padding-top: 15px;
+      padding-bottom: 25px;
+      font-size: 25px;
+      text-align: center;
+   }
 }
