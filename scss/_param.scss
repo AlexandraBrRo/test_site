@@ -4,6 +4,7 @@
    --black: #000;
    --white: #fff;
    --hover-orange: rgb(239, 155, 19);
+   --green: rgb(10, 69, 10);
 }
 
 
@@ -27,9 +28,9 @@ body {
    font-family: 'Gilroy-Regular', sans-serif;
    font-family: 'Lugrasimo', cursive;
 }
-ul, ol{
-   list-style: none;
-}
+// ul, ol{
+//    list-style: none;
+// }
 .centered{
    max-width: 1456px;
    margin-left: auto;

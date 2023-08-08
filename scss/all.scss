@@ -54,6 +54,7 @@
    gap: 50px;
    padding-bottom: 25px;
    font-size: 23px;
+   list-style: none;
    a{
       color: var(--black);
       :hover{
@@ -126,5 +127,58 @@
       padding-bottom: 25px;
       font-size: 25px;
       text-align: center;
+   }
+}
+
+/*volunteer page*/
+
+#map {
+   width: 50%; /* Розмір мапи по ширині */
+   height: 200px; /* Висота мапи, яка змінюватиметься при кліці */
+   transition: height 0.3s ease; /* Плавна анімація при зміні розміру */
+   margin-top: 40px;
+ }
+.volonteer-title{
+   justify-content: center;
+   padding-top: 10px;
+   padding-bottom: 25px;
+   flex-wrap: wrap;
+}
+.info-volonteer-holder {
+   flex-direction: column;
+}
+.volonteer-about{
+   justify-content: center;
+   font-size: 60px;
+   line-height: 20px;
+   color: var(--red-shade);
+   padding-top: 30px;
+   padding-bottom: 25px;
+}
+.volonteer-txt{
+   text-align: center;
+   display: block;
+   margin: 0 auto;
+   max-width: 800px;
+   padding-top: 30px;
+   padding-bottom: 40px;
+   font-size: 30px;
+}
+.volonteer-holder-list{
+   flex-direction: column;
+   align-items: center;
+   .holder-lict-title{
+      font-size: 40px;
+      line-height: 20px;
+      color: var(--red-shade);
+      padding-top: 30px;
+      padding-bottom: 50px;
+   }
+   .volonteer-list{
+      font-size: 20px;
+      line-height: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      color: var(--green);
    }
 }

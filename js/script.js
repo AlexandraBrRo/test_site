@@ -36,23 +36,9 @@ $(document).ready(function(){
       }
       
    });
-
-   // let startPost = $('.sticky').offset().top;
-
-   // $(window).scroll(function() {
-   //   if ($(window).scrollTop() >= startPost) {
-   //     if (!$('.sticky').hasClass('fixed')) {
-   //       $('.sticky').addClass('fixed');
-   //     }
-   //   } else {
-   //     $('.sticky').removeClass('fixed');
-   //   }
-   // });
-   
-   // let originalPaddingTop = $('body').css('padding-top');
-   // let startPost = $('.sticky').offset().top;
-   // let isSticky = false;
  
+   let startPost = 200;
+
    $(window).scroll(function() {
      if ($(window).scrollTop() >= startPost) {
        if (!isSticky) {
@@ -72,4 +58,22 @@ $(document).ready(function(){
 
 });
 
- 
+// JavaScript-код для ініціалізації мапи
+function initMap() {
+  let map = new google.maps.Map(document.getElementById('map'), {
+    center: { lat: 48.2921, lng: 25.9352 }, // Координати центру мапи
+    zoom: 13  // Зум мапи
+  });
+
+}
+
+document.getElementById('map').addEventListener('click', function() {
+  let map = document.getElementById('map');
+  if (map.style.height === '400px') {
+    map.style.height = '600px'; // Змінюємо розмір мапи при кліці
+  } else {
+    map.style.height = '400px'; // Повертаємо початковий розмір при повторному кліці
+  }
+});
+
+
